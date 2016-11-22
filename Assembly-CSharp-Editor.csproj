@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{1F1D3EFF-F7BA-7597-2E2A-670982FCE4EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\External\Reaktion\MidiJack\Editor\MidiJackWindow.cs" />
+     <Compile Include="Assets\External\Reaktion\OscJack\Editor\OscJackWindow.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\AnimatorGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\CameraGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\ConstantMotionGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\GenericCurveGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\GenericGradientGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\GenericTriggerGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\GlobalSettingGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\JitterMotionGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\LightGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\MaterialGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\ParticleSystemGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\SpawnerGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Gear\TransformGearEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Injector\AudioInjectorEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Injector\BeatInjectorEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Injector\OscInjectorEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Internal\GenericLinkDrawer.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Internal\ModifierDrawer.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Internal\RemoteDrawer.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Internal\TriggerDrawer.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Reaktor\ReaktorEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\BandPassFilterEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\ConstantMotionEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\GenericAudioInputEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\JitterMotionEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\ObjectParticleSystem.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\PlanterEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\ReaktionWindow.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\SelfDestructionEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\SpawnerEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\TurbulentMotionEditor.cs" />
+     <Compile Include="Assets\External\Reaktion\Reaktion\Editor\Utility\VariableMotionEditor.cs" />
+     <None Include="Assets\External\Movie Export\Readme.txt" />
+     <None Include="Assets\FacebookSDK\link.xml" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>/Users/jaimito/Documents/Github/MusicVideo/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Editor">
+ <HintPath>/Users/jaimito/Documents/Github/MusicVideo/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.PlatformEditor">
+ <HintPath>/Users/jaimito/Documents/Github/MusicVideo/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.PlatformEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/jaimito/Documents/Github/MusicVideo/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.AppleTV.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{06A2E01F-4E79-F1CB-338E-6FCA641E04B7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{DC16E736-E071-E59C-8C38-F0A6684616CD}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{1457B79F-9944-2893-6666-2AAC2A0D0C02}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
