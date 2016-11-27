@@ -30,6 +30,8 @@ namespace Reaktion {
 public class SpawnerEditor : Editor
 {
     SerializedProperty propPrefabs;
+	SerializedProperty propSpawnAtAwake;
+	SerializedProperty propAwakeSpawnCount;
     SerializedProperty propSpawnRate;
     SerializedProperty propSpawnRateRandomness;
     SerializedProperty propDistribution;
@@ -50,7 +52,9 @@ public class SpawnerEditor : Editor
     void OnEnable()
     {
         propPrefabs             = serializedObject.FindProperty("prefabs");
-        propSpawnRate           = serializedObject.FindProperty("spawnRate");
+		propSpawnAtAwake        = serializedObject.FindProperty("spawnAtAwake");
+		propAwakeSpawnCount     = serializedObject.FindProperty("awakeSpawnCount");
+		propSpawnRate           = serializedObject.FindProperty("spawnRate");
         propSpawnRateRandomness = serializedObject.FindProperty("spawnRateRandomness");
         propDistribution        = serializedObject.FindProperty("distribution");
         propSphereRadius        = serializedObject.FindProperty("sphereRadius");
@@ -65,6 +69,13 @@ public class SpawnerEditor : Editor
         serializedObject.Update();
 
         EditorGUILayout.PropertyField(propPrefabs, true);
+
+		EditorGUILayout.PropertyField(propSpawnAtAwake);
+		if (propSpawnAtAwake.boolValue) {
+			EditorGUI.indentLevel++;
+			EditorGUILayout.PropertyField(propAwakeSpawnCount, new GUIContent("Count"));
+			EditorGUI.indentLevel--;
+		}
 
         EditorGUILayout.PropertyField(propSpawnRate);
         EditorGUILayout.Slider(propSpawnRateRandomness, 0, 1, "Randomness");

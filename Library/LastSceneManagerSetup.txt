@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ProcessTest.unity
+- path: Assets/Scenes/Trident_Levels.unity
   isLoaded: 1
   isActive: 1

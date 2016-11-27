@@ -109,6 +109,7 @@ public class GenericLink<T> : GenericLinkBase where T : Component
         if (_mode == Mode.ByName)
         {
             var go = GameObject.Find(_name);
+			Debug.Log (_name + " " + go);
             if (go) return go.GetComponent<T>();
         }
 

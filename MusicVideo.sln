@@ -7,8 +7,6 @@ Project("{A57C18D2-A49D-AF68-44E9-570251A85D8E}") = "MusicVideo", "Assembly-CSha
 EndProject
 Project("{A57C18D2-A49D-AF68-44E9-570251A85D8E}") = "MusicVideo", "Assembly-CSharp-Editor.csproj", "{1F1D3EFF-F7BA-7597-2E2A-670982FCE4EB}"
 EndProject
-Project("{A57C18D2-A49D-AF68-44E9-570251A85D8E}") = "MusicVideo", "Assembly-UnityScript.unityproj", "{1457B79F-9944-2893-6666-2AAC2A0D0C02}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{1F1D3EFF-F7BA-7597-2E2A-670982FCE4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F1D3EFF-F7BA-7597-2E2A-670982FCE4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F1D3EFF-F7BA-7597-2E2A-670982FCE4EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1457B79F-9944-2893-6666-2AAC2A0D0C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1457B79F-9944-2893-6666-2AAC2A0D0C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1457B79F-9944-2893-6666-2AAC2A0D0C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1457B79F-9944-2893-6666-2AAC2A0D0C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

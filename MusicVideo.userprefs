@@ -1,8 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/baKnoCapture.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs">
     <Files>
-      <File FileName="Assets/Plugins/baKnoCapture.cs" Line="64" Column="55" />
+      <File FileName="Assets/External/Reaktion/Reaktion/Gear/TransformGear.cs" Line="85" Column="19" />
+      <File FileName="Assets/External/Reaktion/Reaktion/Utility/Spawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/External/Reaktion/Reaktion/Internal/ReaktorLink.cs" Line="30" Column="35" />
+      <File FileName="Assets/External/Reaktion/Reaktion/Internal/GenericLink.cs" Line="112" Column="1" />
+      <File FileName="Assets/Scripts/Anims/PointsControl.cs" Line="9" Column="48" />
+      <File FileName="Assets/External/Reaktion/Reaktion/Gear/ConstantMotionGear.cs" Line="48" Column="1" />
+      <File FileName="Assets/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs" Line="15" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

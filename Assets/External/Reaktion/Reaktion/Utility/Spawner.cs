@@ -32,6 +32,8 @@ public class Spawner : MonoBehaviour
     public GameObject[] prefabs;
 
     // Spawn rate settings.
+	public bool spawnAtAwake;
+	public int awakeSpawnCount;
     public float spawnRate;
     public float spawnRateRandomness;
 
@@ -93,6 +95,8 @@ public class Spawner : MonoBehaviour
 
         // Parenting.
         if (parent != null) instance.transform.parent = parent;
+
+
     }
 
     // Make some instances.
@@ -100,6 +104,17 @@ public class Spawner : MonoBehaviour
     {
         while (count-- > 0) Spawn();
     }
+
+	public void Awake () 
+	{
+		if (spawnAtAwake) 
+		{
+				if (awakeSpawnCount > 0) {
+					Spawn (awakeSpawnCount);
+				}
+		}
+	}
+
 
     void Update()
     {
