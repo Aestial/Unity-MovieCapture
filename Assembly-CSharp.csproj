@@ -88,6 +88,7 @@
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\Spawner.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\TurbulentMotion.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\VariableMotion.cs" />
+     <Compile Include="Assets\RandomBoxPosition.cs" />
      <Compile Include="Assets\Scripts\Anims\AnimatorModifier.cs" />
      <Compile Include="Assets\Scripts\Anims\PointsControl.cs" />
      <Compile Include="Assets\Scripts\Control\MixerControl.cs" />
