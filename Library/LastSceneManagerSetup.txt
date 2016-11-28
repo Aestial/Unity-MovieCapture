@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Anims/TunnelWall.unity
+- path: Assets/Scenes/Anims/A.SpiroWall.unity
   isLoaded: 1
   isActive: 1

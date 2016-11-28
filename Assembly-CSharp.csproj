@@ -88,13 +88,13 @@
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\Spawner.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\TurbulentMotion.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\VariableMotion.cs" />
-     <Compile Include="Assets\RandomBoxPosition.cs" />
      <Compile Include="Assets\Scripts\Anims\AnimatorModifier.cs" />
      <Compile Include="Assets\Scripts\Anims\PointsControl.cs" />
      <Compile Include="Assets\Scripts\Control\MixerControl.cs" />
      <Compile Include="Assets\Scripts\Control\ProcessManager.cs" />
      <Compile Include="Assets\Scripts\Helpers\ChildAudioSource.cs" />
      <Compile Include="Assets\Scripts\Helpers\ObjectRecycler.cs" />
+     <Compile Include="Assets\Scripts\Helpers\RandomBoxPosition.cs" />
      <Compile Include="Assets\Scripts\Helpers\ScreenResolution.cs" />
      <Compile Include="Assets\Scripts\Utils\Singleton.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
