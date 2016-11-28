@@ -155,7 +155,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\External\FacebookSDK\link.xml" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
@@ -199,18 +198,6 @@
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Editor">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.PlatformEditor">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Editor/Facebook.Unity.PlatformEditor.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>

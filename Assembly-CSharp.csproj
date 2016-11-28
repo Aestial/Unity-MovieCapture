@@ -45,19 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\LogView.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\MenuBase.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\AccessTokenMenu.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\AppEvents.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\AppInvites.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\AppLinks.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\AppRequests.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\DialogShare.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\GameGroups.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\GraphRequest.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
-     <Compile Include="Assets\External\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
      <Compile Include="Assets\External\Reaktion\MidiJack\Midi.cs" />
      <Compile Include="Assets\External\Reaktion\MidiJack\MidiDriver.cs" />
      <Compile Include="Assets\External\Reaktion\MidiJack\MidiMaster.cs" />
@@ -101,11 +88,13 @@
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\Spawner.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\TurbulentMotion.cs" />
      <Compile Include="Assets\External\Reaktion\Reaktion\Utility\VariableMotion.cs" />
+     <Compile Include="Assets\Scripts\Anims\AnimatorModifier.cs" />
      <Compile Include="Assets\Scripts\Anims\PointsControl.cs" />
-     <Compile Include="Assets\Scripts\CameraLevelControl.cs" />
-     <Compile Include="Assets\Scripts\MixerControl.cs" />
-     <Compile Include="Assets\Scripts\ProcessManager.cs" />
-     <Compile Include="Assets\Scripts\ScreenResolution.cs" />
+     <Compile Include="Assets\Scripts\Control\MixerControl.cs" />
+     <Compile Include="Assets\Scripts\Control\ProcessManager.cs" />
+     <Compile Include="Assets\Scripts\Helpers\ChildAudioSource.cs" />
+     <Compile Include="Assets\Scripts\Helpers\ObjectRecycler.cs" />
+     <Compile Include="Assets\Scripts\Helpers\ScreenResolution.cs" />
      <Compile Include="Assets\Scripts\Utils\Singleton.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -168,7 +157,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\External\FacebookSDK\link.xml" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
@@ -191,12 +179,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/Pavel/Documents/Github/MusicVideo/Assets/External/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

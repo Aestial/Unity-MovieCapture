@@ -6,12 +6,18 @@ public class PointsControl : MonoBehaviour {
 	[SerializeField] private GameObject pointPrefab;
 	[SerializeField] private int numX;
 	[SerializeField] private int numY;
+	[SerializeField] private float amplitude;
+	[SerializeField] private float minSize;
 	[SerializeField] private float rotAngle = 0.0f;
+	[SerializeField] private float upSpeed;
+	[SerializeField] private float topPosition;
+	public float UpSpeed {
+		get { return upSpeed;} 
+		set { upSpeed = value;}
+	}
 
 	private GameObject[] points;
 	private float timer = 0.0f;
-
-
 	private float rhythm;
 	public float Rhythm {
 		get { return rhythm;} 
@@ -41,11 +47,16 @@ public class PointsControl : MonoBehaviour {
 		for (int i = 0; i < numX; i++) {
 			for (int j = 0; j < numY; j++) {
 				GameObject point = points [i * numY + j];
-				float scale = ( Mathf.Sin (point.transform.localPosition.x + timer * rhythm) +1 )* 0.5f + ( Mathf.Sin (point.transform.localPosition.y + timer * rhythm) +1 )* 0.5f;
+				float scale = amplitude * ( Mathf.Sin (point.transform.localPosition.x + timer * rhythm) +1 ) + amplitude * ( Mathf.Sin (point.transform.localPosition.y + timer * rhythm) +1 ) + minSize * 2-0f;
+				//float scale = rhythm * ( Mathf.Sin (point.transform.localPosition.x + timer) +1 )* 0.5f + rhythm * ( Mathf.Sin (point.transform.localPosition.y + timer) +1 )* 0.5f;
 				if ( i == 1 && j == 1) Debug.Log (scale);
-				//point.transform.localScale.Set (scale, scale, 1);
 				point.transform.localScale = new Vector3 (scale, scale, 1);
-				//= point.transform.localScale.y = scale;
+				point.transform.localPosition += new Vector3 (0, upSpeed, 0);
+
+				if (point.transform.localPosition.y >= numY) {
+					point.transform.localPosition = new Vector3 (point.transform.localPosition.x, -numY, 0);
+				}
+
 			}
 		}
 	}
